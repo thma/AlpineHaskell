@@ -10,11 +10,12 @@ example Dockerfile:
 ```
 FROM alpine-haskell
 
-# create content mountpoint
-RUN mkdir content
-
 # copy the actual executable
 COPY ./.stack-work/install/x86_64-linux-nopie/lts-11.2/8.2.2/bin/HsWiki /hswiki
+
+# add further application specific configuration
+# create content mountpoint
+RUN mkdir content
 
 # expose http port to outside world
 EXPOSE 3000
