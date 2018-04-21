@@ -7,7 +7,7 @@ all runtime infrastructure required by Haskell applications but maintains a smal
 
 After building the AlpineHaskell image you can derive runtime images for your haskell applications as shown in the following 
 example Dockerfile:
-'''
+```
 FROM alpine-haskell
 
 # create content mountpoint
@@ -21,4 +21,4 @@ EXPOSE 3000
 
 # startup the server
 CMD ["/hswiki"]
-'''
+```
