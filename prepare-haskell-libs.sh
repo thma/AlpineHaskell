@@ -14,6 +14,7 @@ cp -L /lib/x86_64-linux-gnu/libz.so.1 root/lib/x86_64-linux-gnu/
 cp -L /lib/x86_64-linux-gnu/libnss_files.so.2 root/lib/x86_64-linux-gnu/
 cp -L /lib/x86_64-linux-gnu/libnss_dns.so.2 root/lib/x86_64-linux-gnu/
 cp -L /lib/x86_64-linux-gnu/libresolv.so.2 root/lib/x86_64-linux-gnu/
+cp -L /lib/x86_64-linux-gnu/libgcc_s.so.1 root/lib/x86_64-linux-gnu/
 
 mkdir root/lib64
 cp -L /lib64/ld-linux-x86-64.so.2 root/lib64/
